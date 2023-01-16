@@ -170,9 +170,134 @@ body{
     font-size: 20px;
 }
 .logo{
-    display: grid;
+    display: flex;
     text-align: center;
-    grid-template-columns: repeat(4,1fr);
-    border: 1px solid #FF900E;
+    gap: 20px;
+    justify-content: space-evenly;
+   
 }
+/* identical to box height */
+.some-facts h3{
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 53px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+}
+.some-facts p{
+    color: #727272;
+    margin-left: 60px;
+    
+    
+}
+.box{
+    border: 1px solid #FF900E ;
+    border-radius: 8px;
+    padding-top: 20px;
+    width:220px ;
+    height: 220px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    transition: 0.5s;
+    
+}
+.box:hover{
+    border: 5px solid blue;
+    padding: 30px;
+}
+.box h3{
+    margin: 5px auto;
+}
+     /* this is a footer */
+.footer-header{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer-header h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.footer-header p{
+    color: #727272;
+}
+   /* footer img */
+.footer-img{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin:50px ;
+}
+.footer-img img{
+    
+    height: 50px;
+    max-width: 120px;
+}
+.copy-right{
+    background-color:#FFF4E7;
+    width: 1440px;
+    height: 100px;
+    margin: 70px auto;
+    text-align: center;
+    border-radius: 5px;
+    
+
+}
+.copy-right p{
+    padding:40px;
+}
+          /* media screen  */
+    
+@media only screen and (max-width:576px) {
+    .list-item{
+        flex-direction: column; 
+    } 
+    }
+    .brand-new img{
+        width: 100%;
+        text-align: center;
+    }
+    .first-section{
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .last-contanier{
+        flex-direction: column-reverse;  
+    }
+    
+    .list-img img{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box{
+        width: 100%;
+    }
+    .footer-img{
+        flex-direction: column;
+        gap:20px;
+    }
+    .copy-right{
+        width: 100%;
+    }
+    .main-contaien h3{
+        text-align: left;
+    }
+    .but{
+        position: absolute;
+        top:600px;
+        margin-bottom: ;
+    }
+    .but button{
+        padding: 10px 30px;
+    }
+}
+
 
