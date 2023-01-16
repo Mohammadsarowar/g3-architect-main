@@ -253,7 +253,7 @@ body{
     .list-item{
         flex-direction: column; 
     } 
-    }
+    
     .brand-new img{
         width: 100%;
         text-align: center;
@@ -270,7 +270,7 @@ body{
     }
     
     .list-img img{
-        width: 300px;
+        width: 400px;
         margin: 0 auto;
     }
     .logo{
@@ -292,12 +292,26 @@ body{
     }
     .but{
         position: absolute;
-        top:600px;
-        margin-bottom: ;
+        top:730px;
     }
     .but button{
         padding: 10px 30px;
     }
 }
+@media only screen and (min-width:577px) and (max-width:992px) {
+  .top-header{
+    flex-direction: column;
+    align-items: center;
+  } 
+  .first-section{
+    flex-direction: column;
+  }
+  .last-contanier{
+    flex-direction: column-reverse;
+  }
+  .copy-right{
+    width: 100%;
+  }
 
+}
 
